@@ -1,0 +1,31 @@
+{
+  "name": "hw-http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "localhost:9000",
+    "lint": "eslint . ",
+    "start": "forever ./server/app.js",
+    "watch": "forever -w ./server/app.js"
+  },
+  "author": "Olga",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.2.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.6.1",
+    "live-server": "^1.2.2",
+    "open": "^9.1.0",
+    "prettier": "3.0.1"
+  },
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "forever": "^4.0.3",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "uuid": "^9.0.0"
+  }
+}
